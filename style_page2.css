@@ -1,0 +1,175 @@
+body{
+    background-image: url("page2_img.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-size: 100%,100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100vh;
+}
+#link_id{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    color: rgb(21, 119, 8);
+    font-size: 20px;
+    font-weight: bolder;
+    width: 120px;
+    height: 50px;
+    top: 30px;
+    left: 10px;
+    border-radius: 15px;
+    border: solid rgb(2, 82, 30);
+}
+.upper_title{
+    color: azure;
+    text-shadow: 4px 4px 8px rgba(8, 8, 8, 0.7);
+    font-size: 40px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 40px;
+}
+.upper_title i{
+    font-size: 25px;
+    position: relative;
+    left: -15px;
+}
+.hr_calss,.min_calss,.sec_calss{
+    height: 200px;
+    width: 180px;
+    background-color:rgb(144, 238, 144,0.7);
+    font-size: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 10px;
+    color: aliceblue;
+    text-shadow: 4px 4px 8px rgba(8, 8, 8, 0.3);
+}
+#hr_unit,#min_unit,#sec_unit{
+    font-size: 30px;
+    height: fit-content;
+    width: 180px;
+    background-color: rgba(80, 245, 159,0.9);
+    position: relative;
+    top:30px;
+    text-shadow: 4px 4px 8px rgba(12, 12, 12, 0.3);
+    letter-spacing: 8px;
+}
+.time_class{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#warn_id{
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+    text-shadow: 4px 4px 8px rgba(8, 8, 8, 0.3);
+}
+.btn_class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*---------------------------*/
+#dropbtn_hr,#dropbtn_min {
+    font-weight: bold;
+    background-color: #fafefa;
+    color: rgb(33, 88, 19);
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    position: relative;
+    top:20px;
+}
+
+#dropbtn_hr:hover,#dropbtn_min:hover {
+    background-color: #0f370f;
+    color: rgb(248, 248, 248);
+}
+
+.dropdown-content {
+    position: relative;
+    display: inline-block;/*https://www.w3schools.com/css/tryit.asp?filename=trycss_inline-block_span1*/
+
+}
+
+.dropdown-content_hr,.dropdown-content_min {
+    display: none;
+    position: absolute;
+    background-color: rgb(241, 241, 241);
+    min-width: 160px;
+    height: fit-content;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: 0px 0px 0px 0px;
+    /* position: relative;
+    top:20px; */
+}
+.set_position{
+    position: relative;
+    top: 10px;
+}
+.dropdown-content_hr p,.dropdown-content_min p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin: 0px 0px 0px 0px;
+
+}
+
+.dropdown-content_hr p:active,.dropdown-content_min p:active {
+    background-color: rgb(187, 181, 181);
+    height: fit-content;
+}
+
+.show {display: flex;}/*很特別的一行*/
+/*----------------處理btn---------------*/
+#stop_btn,#start_btn_id,#reset_btn{
+    font-size: 30px;
+    font-weight: bold;
+    background-color: darkgreen;
+    color: aliceblue;
+    border: solid white 2px;
+    border-radius: 15px;
+    position: relative;
+    top:20px;
+}
+#stop_btn:active,#start_btn_id:active,#reset_btn:active{
+    background-color: rgb(233, 233, 233);
+    color: rgb(0, 73, 17);
+}
+#reset_btn{
+    position: relative;
+    top:30px;
+}
+#keep_time{
+    position: relative;
+    top:30px;
+    font-size: 20px;
+    color: rgb(6, 100, 1);
+    font-weight: bold;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 15px;
+    background-color: rgba(240, 255, 255,0.8);
+    border: solid 2px rgb(2, 76, 5);
+    padding: 5px;
+}

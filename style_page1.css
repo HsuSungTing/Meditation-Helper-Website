@@ -1,0 +1,242 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    /*background-color: rgb(255, 255, 255);*/
+    background-image: url("main_img1.jpg");
+    background-repeat: no-repeat;
+}
+#link_id{
+    position: absolute;
+    background-color: coral;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bolder;
+    width: 120px;
+    height: 50px;
+    top: 30px;
+    left: 10px;
+    border-radius: 15px;
+    border: solid white 2px;
+}
+.big_square{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    top: 400px;
+    height: 450px;
+    width: 1000px;
+    background-color: rgba(255, 127, 80, 0.65);
+    margin: 100px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.right_part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+}
+.left_part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.meditation_app{
+    position: relative;
+    font-size: 30px;
+    color: aliceblue;
+    font-weight: bold;
+    height:fit-content;
+    width:fit-content;
+    /*background-color: #f9583f;*/
+    border-radius: 20px;
+    /*border: solid 2px white;*/
+    top: 10px;
+    padding: 2px;
+}
+#track_img{
+    height: 300px;
+    /* display: inline-block; */
+}
+
+#vol_value{
+    width: fit-content;
+    font-weight: bolder;
+    font-size: 20px;
+    height: fit-content;
+    color: aliceblue;
+    display: inline;
+    position: relative;
+    left: -5px;
+}
+
+input[type="range"]#vol_btn {
+    -webkit-appearance: none;
+    position: relative;
+    width: 200px;
+    height:20px;
+    overflow: hidden;
+    cursor: pointer;              
+    outline: none;
+    background:none; 
+    border-bottom: 10px;
+    margin-bottom: 100px;               
+}
+
+input[type="range"]#vol_btn::-webkit-slider-thumb {
+    top:-5px;
+    position: relative;
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    background: #f9f7f6;
+    border: solid 1px #5f5f5f;
+    border-radius: 50%;
+    cursor: pointer;
+}
+input[type="range"]#vol_btn::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    height: 2px;
+    background: rgb(243, 239, 239);
+} 
+
+#vol_icon{
+    font-size: 20px;
+    height: fit-content;
+    width: fit-content;
+    padding: 3px;
+    color: aliceblue;
+    /*background-color: #e14414;*/
+}
+#sub_vol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sub_med{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#men_icon{
+    position: relative;
+    top: 72px;
+    left: -30px;
+    font-size: 20px;
+    color: aliceblue;
+}
+/*一群按鈕 右側*/
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.left_title_class{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    top: 20px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+input[type="range"]#duration_btn {
+    -webkit-appearance: none;
+    position: relative;
+    width: 350px;
+    height:20px;
+    overflow: hidden;
+    cursor: pointer;              
+    outline: none;
+    background:none; 
+    border-bottom: 10px;
+    margin-bottom: 100px; 
+    top: 20px;
+    position: relative;              
+}
+
+input[type="range"]#duration_btn::-webkit-slider-thumb {
+    top:-5px;
+    position: relative;
+    -webkit-appearance: none;
+    height: 17px;
+    width: 17px;
+    background: #444241;
+    border-radius: 50%;
+    cursor: pointer;
+}
+input[type="range"]#duration_btn::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    height: 4px;
+    background: rgb(243, 239, 239);
+} 
+
+.btns button{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #5f5f5f;
+    color: #f9f7f6;
+    margin:  20px 7px 20px 7px ;
+    border: #f9f7f6 solid 2px;
+}
+.time_class{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 30px;
+    font-weight: bold;
+    color: aliceblue;
+    margin-top: 2px;
+    top: -40px 
+}
+.bottom_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom_btn button{
+    top: -25px;
+    margin: 15px;
+    font-size: 25px;
+    width: fit-content;
+    height: fit-content;
+    background-color:rgb(210, 62, 91);
+    border-radius: 15px;
+    color: aliceblue;
+    border: solid aliceblue 3px;
+    position: relative;
+}
+.bottom_btn button:active{
+    background-color: aliceblue;
+    color: rgb(210, 62, 91);
+    border: solid rgb(210, 62, 91) 3px;;
+}
+.bottom_btn #auto_btn{
+    position: relative;
+    left: -5px;
+}
+.bottom_btn #reset_id{
+    position: relative;
+    left: 5px;
+}
