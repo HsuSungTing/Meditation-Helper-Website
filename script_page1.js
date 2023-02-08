@@ -73,13 +73,13 @@ function pre_song(){
     if(track_ct!=0){
         track_ct--;
         if(track_ct==0){
-            document.body.style.backgroundImage = "url('meditatingsunset.jpg')";
+            document.body.style.backgroundImage = "url('main_img1.jpg')";
         }
         else if(track_ct==1){
-            document.body.style.backgroundImage = "url('hand-woman.jpg')";
+            document.body.style.backgroundImage = "url('main_img2.jpg')";
         }
         else if(track_ct==2){
-            document.body.style.backgroundImage = "url('yoga_1200.jpg')";
+            document.body.style.backgroundImage = "url('main_img3.jpg')";
         }
     }
     load_data(track_ct);
